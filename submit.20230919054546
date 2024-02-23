@@ -1,0 +1,47 @@
+Assignment Submission
+       Unit: cosc330
+ Assignment: a4
+   Username: bwatso25
+     Who is: Bryce Watson <bwatso25@myune.edu.au>
+       Date: Tue 19 Sep 2023 05:45:46 AEST
+----------------------------------------------------------------
+Files submitted:
+-rw-r--r--. 1 bwatso25 bwatso25  17K Sep 15 02:50 bmpfile.c
+-rw-r--r--. 1 bwatso25 bwatso25 4.2K Sep 18 03:34 bmpfile.h
+-rw-r--r--. 1 bwatso25 bwatso25  301 Sep 19 05:07 makefile
+-rw-r--r--. 1 bwatso25 bwatso25 8.7K Sep 19 05:38 mandelbrot.cu
+-rw-rw-r--. 1 bwatso25 bwatso25 8.0M Sep 19 05:44 my_mandelbrot_fractal.bmp
+----------------------------------------------------------------
+Script of session:
+Script started on 2023-09-19 05:41:43+10:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="292" LINES="17"]
+]0;bwatso25@turing:~/Desktop/cosc330_2023/assignment_4[?2004h[36m[[m[34mbwatso25@turing[m [32massignment_4[m[36m][m $ ssh bourbaki
+[?2004lLast login: Fri Sep 15 04:10:58 2023 from turing.une.edu.au
+]0;bwatso25@bourbaki:~[36m[[m[34mbwatso25@bourbaki[m [32m~[m[36m][m $ cd Desktop/cosc330_2023/assignment_4
+]0;bwatso25@bourbaki:~/Desktop/cosc330_2023/assignment_4[36m[[m[34mbwatso25@bourbaki[m [32massignment_4[m[36m][m $ make clean
+rm -f *.o *~ mandelbrot
+]0;bwatso25@bourbaki:~/Desktop/cosc330_2023/assignment_4[36m[[m[34mbwatso25@bourbaki[m [32massignment_4[m[36m][m $ make
+nvcc -g -G -lm bmpfile.c -c
+nvcc -g -G mandelbrot.cu bmpfile.o -o mandelbrot -lm
+]0;bwatso25@bourbaki:~/Desktop/cosc330_2023/assignment_4[36m[[m[34mbwatso25@bourbaki[m [32massignment_4[m[36m][m $ ./mandelbrot 7680 4320
+]0;bwatso25@bourbaki:~/Desktop/cosc330_2023/assignment_4[36m[[m[34mbwatso25@bourbaki[m [32massignment_4[m[36m][m $ make run
+./mandelbrot 1920 1080
+]0;bwatso25@bourbaki:~/Desktop/cosc330_2023/assignment_4[36m[[m[34mbwatso25@bourbaki[m [32massignment_4[m[36m][m $ make clean
+rm -f *.o *~ mandelbrot
+]0;bwatso25@bourbaki:~/Desktop/cosc330_2023/assignment_4[36m[[m[34mbwatso25@bourbaki[m [32massignment_4[m[36m][m $ ssh turing
+Last login: Tue Sep 19 05:35:33 2023 from bourbaki.une.edu.au
+]0;bwatso25@turing:~[?2004h[36m[[m[34mbwatso25@turing[m [32m~[m[36m][m $ exit
+[?2004llogout
+Connection to turing closed.
+]0;bwatso25@bourbaki:~/Desktop/cosc330_2023/assignment_4[36m[[m[34mbwatso25@bourbaki[m [32massignment_4[m[36m][m $ ssh turing
+Last login: Tue Sep 19 05:44:29 2023 from bourbaki.une.edu.au
+]0;bwatso25@turing:~[?2004h[36m[[m[34mbwatso25@turing[m [32m~[m[36m][m $ exit
+[?2004llogout
+Connection to turing closed.
+]0;bwatso25@bourbaki:~/Desktop/cosc330_2023/assignment_4[36m[[m[34mbwatso25@bourbaki[m [32massignment_4[m[36m][m $ exit
+logout
+Connection to bourbaki closed.
+]0;bwatso25@turing:~/Desktop/cosc330_2023/assignment_4[?2004h[36m[[m[34mbwatso25@turing[m [32massignment_4[m[36m][m $ exit
+[?2004lexit
+
+Script done on 2023-09-19 05:45:21+10:00 [COMMAND_EXIT_CODE="0"]
+2837
